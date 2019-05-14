@@ -43,7 +43,7 @@ def validation():
         #return render_template('index.html', password_match_error = password_match_error, username=username, email=email)
 
     if password_error != '' or username_error != '' or email_error != '' or verify_password_error != '':
-        return render_template('index.html', username=username, email = email, password_error=password_error, verify_password_error=verify_password_error, username_error=username_error)
+        return render_template('index.html', username=username, email = email, password_error=password_error, verify_password_error=verify_password_error, username_error=username_error, email_error = email_error)
 
     else:
         return  render_template('welcome.html', email_error = email_error, username=username, email = email)
